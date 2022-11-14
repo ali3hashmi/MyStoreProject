@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+		<listener class-name="com.dcpl.utility.ListenerClass">
+		</listener>
+	</listeners>
+	<test thread-count="5" name="Test_All">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.dcpl.testcase.AccountCreationPageTest" />
+			<class name="com.dcpl.testcase.OrderPageTest" />
+			<class name="com.dcpl.testcase.AddToCartPageTest" />
+			<class name="com.dcpl.testcase.EndToEndTest" />
+			<class name="com.dcpl.testcase.LoginPageTest" />
+			<class name="com.dcpl.testcase.SearchResultPageTest" />
+			<class name="com.dcpl.testcase.HomePageTest" />
+			<class name="com.dcpl.testcase.IndexPageTest" />
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
